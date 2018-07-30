@@ -9,7 +9,7 @@
 //Init function
     function init () {
         //Set active slide visible
-        TweenLite.set($slideActive, {y: '0%'});
+        TweenLite.set($slideActive, {x: '0%'});
 
         //Fade slides in
         TweenLite.set($body, {className: '-=loading'});
@@ -50,23 +50,23 @@
             //console.log('going down');
             tlDown
                 .set($body, {className: '+=is-animating'})
-                .to(sectionFrom, 1.2, {y: '-=100%', ease:Power4.easeInOut, clearProps: 'all'}, '0')
-                .to(sectionTo, 1.2, {y: '0%', ease:Power4.easeInOut}, '0')
-                .to(bcgFrom, 1.2, {y: '30%', ease:Power4.easeInOut, clearProps: 'all'}, '0')
-                .from(bcg, 1.2, {y: '-30%', ease:Power4.easeInOut, clearProps: 'all'}, '0')
-                .from(heading, 0.7, {autoAlpha: 0, y: 40, ease:Power4.easeInOut}, '-=1')
-                .from(subheading, 0.7, {autoAlpha: 0, y: 40, ease:Power4.easeInOut}, '-=0.6')
+                .to(sectionFrom, 1.2, {x: '-=100%', ease:Power4.easeInOut, clearProps: 'all'}, '0')
+                .to(sectionTo, 1.2, {x: '0%', ease:Power4.easeInOut}, '0')
+                .to(bcgFrom, 1.2, {x: '30%', ease:Power4.easeInOut, clearProps: 'all'}, '0')
+                .from(bcg, 1.2, {x: '-30%', ease:Power4.easeInOut, clearProps: 'all'}, '0')
+                .from(heading, 0.7, {autoAlpha: 0, x: 40, ease:Power4.easeInOut}, '-=1')
+                .from(subheading, 0.7, {autoAlpha: 0, x: 40, ease:Power4.easeInOut}, '-=0.6')
                 .set($body, {className: '-=is-animating'});
         } else {
             tlUp
                 .set($body, {className: '+=is-animating'})
-                .set(sectionTo, {y: '-100%'})
-                .to(sectionFrom, 1.2, {y: '100%', ease: Power4.easeInOut, clearProps: 'all'}, '0')
-                .to(sectionTo, 1.2, {y: '0%', ease: Power4.easeInOut}, '0')
-                .to(bcgFrom, 1.2, {y: '-30%', ease: Power4.easeInOut, clearProps: 'all'},  '0')
-                .from(bcg, 1.2, {y: '30%', ease: Power4.easeInOut, clearProps: 'all'}, '0')
-                .from(heading, 0.7, {autoAlpha: 0, y: 40, ease:Power4.easeInOut}, '-=1')
-                .from(subheading, 0.7, {autoAlpha: 0, y: 40, ease:Power4.easeInOut}, '-=0.6')
+                .set(sectionTo, {x: '-100%'})
+                .to(sectionFrom, 1.2, {x: '100%', ease: Power4.easeInOut, clearProps: 'all'}, '0')
+                .to(sectionTo, 1.2, {x: '0%', ease: Power4.easeInOut}, '0')
+                .to(bcgFrom, 1.2, {x: '-30%', ease: Power4.easeInOut, clearProps: 'all'},  '0')
+                .from(bcg, 1.2, {x: '30%', ease: Power4.easeInOut, clearProps: 'all'}, '0')
+                .from(heading, 0.7, {autoAlpha: 0, x: 40, ease:Power4.easeInOut}, '-=1')
+                .from(subheading, 0.7, {autoAlpha: 0, x: 40, ease:Power4.easeInOut}, '-=0.6')
                 .set($body, {className: '-=is-animating'});
         }
 

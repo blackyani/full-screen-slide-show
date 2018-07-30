@@ -108,7 +108,7 @@ h1, h2, h3, h4 {
     left: 0;
     bottom: 0;
     right: 0;
-    transform: translateY(100%);
+    transform: translateX(100%);
     -webkit-transition:opacity 0.3s linear, visibility 0.3s linear;
     -moz-transition:opacity 0.3s linear, visibility 0.3s linear;
     -ms-transition:opacity 0.3s linear, visibility 0.3s linear;
