@@ -114,6 +114,12 @@ h1, h2, h3, h4 {
     -ms-transition:opacity 0.3s linear, visibility 0.3s linear;
     -o-transition:opacity 0.3s linear, visibility 0.3s linear;
     transition:opacity 0.3s linear, visibility 0.3s linear;
+    opacity:1;
+    visibility: visible;
+}
+.loading .slide {
+    opacity: 0;
+    visibility: hidden;
 }
 .bcg {
     background-size: cover;
@@ -146,6 +152,12 @@ h1, h2, h3, h4 {
 }
 .slide04 .slideContent p {
     color: rgba(0,0,0,0.7);
+}
+.slide02-active .nav a {
+    color: #ffffff;
+}
+.slide02-active .nav li.active a {
+    color: #222;
 }
 
 /*Navigation*/
