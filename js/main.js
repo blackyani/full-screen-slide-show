@@ -55,7 +55,7 @@
                 .to(bcgFrom, 1.2, {x: '30%', ease:Power4.easeInOut, clearProps: 'all'}, '0')
                 .from(bcg, 1.2, {x: '-30%', ease:Power4.easeInOut, clearProps: 'all'}, '0')
                 .from(heading, 0.7, {autoAlpha: 0, x: 40, ease:Power4.easeInOut}, '-=1')
-                .from(subheading, 0.7, {autoAlpha: 0, x: 40, ease:Power4.easeInOut}, '-=0.6')
+                .from(subheading, 0.7, {autoAlpha: 0, y: 40, ease:Power4.easeInOut}, '-=0.6')
                 .set($body, {className: '-=is-animating'});
         } else {
             tlUp
@@ -66,7 +66,7 @@
                 .to(bcgFrom, 1.2, {x: '-30%', ease: Power4.easeInOut, clearProps: 'all'},  '0')
                 .from(bcg, 1.2, {x: '30%', ease: Power4.easeInOut, clearProps: 'all'}, '0')
                 .from(heading, 0.7, {autoAlpha: 0, x: 40, ease:Power4.easeInOut}, '-=1')
-                .from(subheading, 0.7, {autoAlpha: 0, x: 40, ease:Power4.easeInOut}, '-=0.6')
+                .from(subheading, 0.7, {autoAlpha: 0, y: 40, ease:Power4.easeInOut}, '-=0.6')
                 .set($body, {className: '-=is-animating'});
         }
 
